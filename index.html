@@ -21,22 +21,20 @@
             <video autoplay muted loop playsinline class="background-video">
                 <source src="./Videos/hero-header.mp4" type="video/mp4">
                 Your browser does not support the video tag.
-            </video> 
+            </video>
 
-            
+
             <!-- Floating text -->
-    <div class="floating-text">
-        <h2 class="section-4__h2 text-center">LOREM IPSUM DOLOR SIT AMET</h2>
-        <p class="section-4__p  text-center">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-            .</p>
-    </div>
+            <div class="floating-text">
+                <h2 class="section-4__h5 text-center">- Hangout Cafe -</h2>
+                <p class="section-4__p  text-center">Brewed to bring people together</p>
+            </div>
         </section>
         <div class="logo-container">
             <img src="./Images/Section-4-Images/section-4-logo-float.svg" alt="Cafe Image" class="logo-image">
-           
+
         </div>
-    
+
         <section class="section-4 responsive-container ">
             <p class="section-4__p black-clr text-center">At Hangout Cafe, we believe in creating more than just a place
                 to grab a coffee or a bite to eat. We aim to foster a community where friends, families, and colleagues
@@ -53,15 +51,15 @@
         </section>
 
         <script>
-            document.addEventListener('DOMContentLoaded', function() {
+            document.addEventListener('DOMContentLoaded', function () {
                 const images = document.querySelectorAll('.section-4__img-div img');
-            
+
                 const options = {
                     root: null, // Use the viewport as the root
                     rootMargin: '0px',
                     threshold: 0.1 // Trigger when at least 10% of the image is visible
                 };
-            
+
                 const observer = new IntersectionObserver((entries) => {
                     entries.forEach(entry => {
                         if (entry.isIntersecting) {
@@ -72,14 +70,14 @@
                         }
                     });
                 }, options);
-            
+
                 images.forEach(image => {
                     observer.observe(image);
                 });
             });
-            </script>
+        </script>
 
-            
+
         <section class="section-2 responsive-container">
             <div class="section-2-left">
                 <video src="./Videos/hero-section.mp4" video autoplay muted loop playsinline></video>
@@ -114,7 +112,10 @@
                     improve and allow us to continue offering the best possible service.</p>
 
 
-                <button class="section-2-right__button-secondary">Order Now and Experience the Difference!</button>
+                <button class="section-2-right__button-secondary"
+                    onclick="window.location.href='URL_TO_YOUR_FILE_OR_PAGE'">
+                    Order Now and Experience the Difference!
+                </button>
             </div>
 
 
@@ -222,9 +223,9 @@
                 <p class="section-5__p text-center black-clr">Choosing Hangout Cafe could be appealing for several
                     reasons:</p> <br>
 
-                    <div class="image-container">
-                        <img src="./Images/Section-5-Images/section-5-img-1-menu.svg" alt="Blog-image-1">
-                    </div>
+                <div class="image-container">
+                    <img src="./Images/Section-5-Images/section-5-img-1-menu.svg" alt="Blog-image-1">
+                </div>
                 <div class="section-5__testimonial-div">
                     <div class="section-5__testimonial black-clr">
                         <p>Relaxed Atmosphere &nbsp;&nbsp;<i class="fa-solid fa-star yellow-clr"></i><i
@@ -267,13 +268,13 @@
 
                 </div>
             </div>
-            
+
         </section>
-       
-      
 
 
-      
+
+
+
 
 
 
@@ -303,7 +304,7 @@
         </footer>
     </main>
     </div>
-    
+
 </body>
 
 </html>
