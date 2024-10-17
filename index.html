@@ -19,22 +19,19 @@
     <main class="main-section">
         <section class="section-1">
             <video autoplay muted loop playsinline class="background-video">
-                <source src="./Videos/hero-header.mp4" type="video/mp4">
+                <source src="./Videos/hero-header-1.mp4" type="video/mp4">
                 Your browser does not support the video tag.
-            </video>
+            </video> 
 
-
+            
             <!-- Floating text -->
-            <div class="floating-text">
-                <h2 class="section-4__h5 text-center">- Hangout Cafe -</h2>
-                <p class="section-4__p  text-center">Brewed to bring people together</p>
-            </div>
+  
         </section>
         <div class="logo-container">
             <img src="./Images/Section-4-Images/section-4-logo-float.svg" alt="Cafe Image" class="logo-image">
-
+           
         </div>
-
+    
         <section class="section-4 responsive-container ">
             <p class="section-4__p black-clr text-center">At Hangout Cafe, we believe in creating more than just a place
                 to grab a coffee or a bite to eat. We aim to foster a community where friends, families, and colleagues
@@ -51,15 +48,15 @@
         </section>
 
         <script>
-            document.addEventListener('DOMContentLoaded', function () {
+            document.addEventListener('DOMContentLoaded', function() {
                 const images = document.querySelectorAll('.section-4__img-div img');
-
+            
                 const options = {
                     root: null, // Use the viewport as the root
                     rootMargin: '0px',
                     threshold: 0.1 // Trigger when at least 10% of the image is visible
                 };
-
+            
                 const observer = new IntersectionObserver((entries) => {
                     entries.forEach(entry => {
                         if (entry.isIntersecting) {
@@ -70,15 +67,15 @@
                         }
                     });
                 }, options);
-
+            
                 images.forEach(image => {
                     observer.observe(image);
                 });
             });
-        </script>
+            </script>
 
-
-        <section class="section-2 responsive-container">
+            
+        <!-- <section class="section-2 responsive-container">
             <div class="section-2-left">
                 <video src="./Videos/hero-section.mp4" video autoplay muted loop playsinline></video>
             </div>
@@ -110,58 +107,64 @@
                     Whether it’s our aromatic coffee or a fresh meal, we’re confident you’ll love every bite. And once
                     you’ve enjoyed your meal, don’t forget to share your experience with us! Your reviews help us
                     improve and allow us to continue offering the best possible service.</p>
-
-
-                <button class="section-2-right__button-secondary"
-                    onclick="window.location.href='URL_TO_YOUR_FILE_OR_PAGE'">
-                    Order Now and Experience the Difference!
-                </button>
-            </div>
-
-
-        </section>
-        <!-- <section class="section-3 responsive-container common-padding">
-            <h2 class="section-3__h1 black-clr text-center">Step into Hangout Cafe, your perfect spot to unwind and
-                savor every sip! </h2>
-            <p class="section-3__p black-clr text-center">Whether you're craving a rich, aromatic coffee or a sweet
-                treat to brighten your day, our cozy atmosphere and mouthwatering menu make it the ultimate place to
-                relax with friends or enjoy some quiet time. Come hang out, indulge in delicious bites, and make every
-                visit a memorable one!
-
-            </p>
-            <div class="section-3__card-main-div">
-                <div class="section-3__card black-clr">
-                    <h3></h3>
-
-                </div>
-                <div class="section-3__card black-clr">
-                    <div class="section-3__coffee-descp">
-                        <h3></h3>
-                    </div>
-                </div>
-                <div class="section-3__card black-clr">
-                    <div class="section-3__coffee-descp">
-                        <h3></h3>
-                    </div>
-                </div>
-                <div class="section-3__card black-clr">
-                    <div class="section-3__coffee-descp">
-                        <h3></h3>
-                    </div>
-                </div>
-                <div class="section-3__card black-clr">
-                    <div class="section-3__coffee-descp">
-                        <h3></h3>
-                    </div>
-
-                </div>
-                <div class="section-3__card black-clr">
-                    <div class="section-3__coffee-descp">
-                        <h3></h3>
-                    </div>
-                </div>
+                <button class="section-2-right__button-secondary">Order Now and Experience the Difference!</button>
             </div>
         </section> -->
+       
+        <section class="section-5">
+            <div class="responsive-container">
+                <h2 class="section-5__h2 text-center black-clr">Hangout Cafe: More Than Just a Coffee Shop</h2>
+                <p class="section-5__p text-center black-clr">Choosing Hangout Cafe could be appealing for several
+                    reasons:</p> <br>
+
+                    <div class="image-container">
+                        <img src="./Images/Section-5-Images/section-5-img-1-menu.svg" alt="Blog-image-1">
+                    </div>
+                <div class="section-5__testimonial-div">
+                    <div class="section-5__testimonial black-clr">
+                        <p>Relaxed Atmosphere &nbsp;&nbsp;<i class="fa-solid fa-star yellow-clr"></i><i
+                                class="fa-solid fa-star yellow-clr"></i><i class="fa-solid fa-star yellow-clr"></i><i
+                                class="fa-solid fa-star yellow-clr"></i><i class="fa-solid fa-star white-clr"></i>
+                        </p>
+                        <p>Hangout Cafe typically offers a cozy and casual environment, making it perfect for
+                            socializing, studying, or unwinding after a busy day.</p>
+                    </div>
+
+                    <div class="section-5__testimonial black-clr">
+                        <p>Variety of Beverages &nbsp;&nbsp;<i class="fa-solid fa-star yellow-clr"></i><i
+                                class="fa-solid fa-star yellow-clr"></i><i class="fa-solid fa-star yellow-clr"></i><i
+                                class="fa-solid fa-star yellow-clr"></i><i class="fa-solid fa-star yellow-clr"></i>
+                        </p>
+                        <p>Whether you're a coffee lover or prefer teas, smoothies, or specialty drinks, Hangout Cafe
+                            likely offers a diverse menu to suit different preferences.</p>
+                    </div>
+
+
+                    <div class="section-5__testimonial black-clr">
+
+                        <p>Community-Oriented &nbsp;&nbsp;<i class="fa-solid fa-star yellow-clr"></i><i
+                                class="fa-solid fa-star yellow-clr"></i><i class="fa-solid fa-star yellow-clr"></i><i
+                                class="fa-solid fa-star yellow-clr"></i><i class="fa-solid fa-star yellow-clr"></i>
+                        </p>
+                        <p>Local cafes often foster a sense of community, where regular customers feel welcome and
+                            connected.</p>
+                    </div>
+
+                    <div class="section-5__testimonial black-clr">
+
+                        <p>Tasty Food Options &nbsp;&nbsp;<i class="fa-solid fa-star yellow-clr"></i><i
+                                class="fa-solid fa-star yellow-clr"></i><i class="fa-solid fa-star yellow-clr"></i><i
+                                class="fa-solid fa-star yellow-clr"></i><i class="fa-solid fa-star yellow-clr"></i>
+                        </p>
+                        <p>Many cafes provide a selection of light snacks, pastries, and sandwiches that pair well with
+                            drinks, making it a convenient spot for breakfast, brunch, or a light meal.</p>
+                    </div>
+
+                </div>
+            </div>
+            
+        </section>
+
         <section class="section-6 responsive-container">
             <h2 class="section-6__h2 black-clr text-center">Community & Events Focus: Looking for the perfect place to
                 connect and create memories?</h2>
@@ -217,64 +220,12 @@
         </section>
 
 
-        <section class="section-5">
-            <div class="responsive-container">
-                <h2 class="section-5__h2 text-center black-clr">Hangout Cafe: More Than Just a Coffee Shop</h2>
-                <p class="section-5__p text-center black-clr">Choosing Hangout Cafe could be appealing for several
-                    reasons:</p> <br>
-
-                <div class="image-container">
-                    <img src="./Images/Section-5-Images/section-5-img-1-menu.svg" alt="Blog-image-1">
-                </div>
-                <div class="section-5__testimonial-div">
-                    <div class="section-5__testimonial black-clr">
-                        <p>Relaxed Atmosphere &nbsp;&nbsp;<i class="fa-solid fa-star yellow-clr"></i><i
-                                class="fa-solid fa-star yellow-clr"></i><i class="fa-solid fa-star yellow-clr"></i><i
-                                class="fa-solid fa-star yellow-clr"></i><i class="fa-solid fa-star white-clr"></i>
-                        </p>
-                        <p>Hangout Cafe typically offers a cozy and casual environment, making it perfect for
-                            socializing, studying, or unwinding after a busy day.</p>
-                    </div>
-
-                    <div class="section-5__testimonial black-clr">
-                        <p>Variety of Beverages &nbsp;&nbsp;<i class="fa-solid fa-star yellow-clr"></i><i
-                                class="fa-solid fa-star yellow-clr"></i><i class="fa-solid fa-star yellow-clr"></i><i
-                                class="fa-solid fa-star yellow-clr"></i><i class="fa-solid fa-star yellow-clr"></i>
-                        </p>
-                        <p>Whether you're a coffee lover or prefer teas, smoothies, or specialty drinks, Hangout Cafe
-                            likely offers a diverse menu to suit different preferences.</p>
-                    </div>
+        
+       
+      
 
 
-                    <div class="section-5__testimonial black-clr">
-
-                        <p>Community-Oriented &nbsp;&nbsp;<i class="fa-solid fa-star yellow-clr"></i><i
-                                class="fa-solid fa-star yellow-clr"></i><i class="fa-solid fa-star yellow-clr"></i><i
-                                class="fa-solid fa-star yellow-clr"></i><i class="fa-solid fa-star yellow-clr"></i>
-                        </p>
-                        <p>Local cafes often foster a sense of community, where regular customers feel welcome and
-                            connected.</p>
-                    </div>
-
-                    <div class="section-5__testimonial black-clr">
-
-                        <p>Tasty Food Options &nbsp;&nbsp;<i class="fa-solid fa-star yellow-clr"></i><i
-                                class="fa-solid fa-star yellow-clr"></i><i class="fa-solid fa-star yellow-clr"></i><i
-                                class="fa-solid fa-star yellow-clr"></i><i class="fa-solid fa-star yellow-clr"></i>
-                        </p>
-                        <p>Many cafes provide a selection of light snacks, pastries, and sandwiches that pair well with
-                            drinks, making it a convenient spot for breakfast, brunch, or a light meal.</p>
-                    </div>
-
-                </div>
-            </div>
-
-        </section>
-
-
-
-
-
+      
 
 
 
@@ -304,7 +255,7 @@
         </footer>
     </main>
     </div>
-
+    
 </body>
 
 </html>
